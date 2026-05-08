@@ -13,8 +13,7 @@ if (!fs.existsSync(pluginSrc)) {
 }
 
 if (!fs.existsSync(pluginsDir)) {
-  console.error("OpenCode plugins directory not found");
-  process.exit(1);
+  fs.mkdirSync(pluginsDir, { recursive: true });
 }
 
 fs.copyFileSync(pluginSrc, pluginDest);
