@@ -1,0 +1,17 @@
+{
+  "name": "opencode-usage-viewer",
+  "version": "1.0.0",
+  "description": "OpenCode Go usage plugin showing rolling, weekly and monthly usage",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "usage"
+  ],
+  "author": "",
+  "license": "MIT"
+}
