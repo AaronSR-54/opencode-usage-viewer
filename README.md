@@ -27,7 +27,7 @@ https://opencode.ai/workspace/[YOUR_ID_IS_HERE]/go
 npm install -g opencode-usage-viewer
 ```
 
-After installing, restart opencode.
+The postinstall script automatically adds `opencode-usage-viewer` to your global opencode config (`~/.config/opencode/opencode.json` or `opencode.jsonc`). After installing, restart opencode.
 
 ## How it works
 
@@ -67,17 +67,14 @@ MONTHLY   ░░░░░░░░░░░░░░░░░░░░░░░�
 npm uninstall -g opencode-usage-viewer
 ```
 
-Also manually delete the file:
-```
-~/.config/opencode/plugins/opencode-usage-viewer.js
-```
+Also remove `opencode-usage-viewer` from the `plugin` array in your opencode config (`~/.config/opencode/opencode.json` or `opencode.jsonc`).
 
 ## Project structure
 
 ```
 opencode-usage-viewer/
   index.js            # Main plugin (exports OpenCodeUsagePlugin)
-  postinstall.js      # Copies plugin to opencode plugins folder
+  postinstall.js      # Adds plugin entry to opencode config
   package.json        # npm package config
   README.md           # This file
   screenshot-tool.png # Tool output screenshot
