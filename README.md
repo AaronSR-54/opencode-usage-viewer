@@ -69,7 +69,7 @@ npm uninstall -g opencode-usage-viewer
 
 Also manually delete the file:
 ```
-%APPDATA%\opencode\plugins\opencode-usage-viewer.js
+~/.config/opencode/plugins/opencode-usage-viewer.js
 ```
 
 ## Project structure
