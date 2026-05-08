@@ -1,6 +1,6 @@
 {
   "name": "opencode-usage-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenCode Go usage plugin showing rolling, weekly and monthly usage",
   "main": "index.js",
   "files": ["index.js", "postinstall.js", "package.json", "README.md"],
